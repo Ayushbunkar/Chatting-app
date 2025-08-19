@@ -1,8 +1,10 @@
-@import "tailwindcss";
-@plugin "flyonui";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Import FlyonUI CSS */
 @import "flyonui/variants.css";
-@source "./node_modules/flyonui/flyonui.js";
 
-
-// index.css
-@source "./node_modules/flyonui/dist/accordion.js" // Specific JS component
+/* Remove invalid @plugin and @source directives.
+  JavaScript files cannot be imported via CSS. 
+  If you need JS, import them in your JS/React files. */
