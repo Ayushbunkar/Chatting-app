@@ -1,10 +1,58 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-/* Import FlyonUI CSS */
+@import "tailwindcss";
+@plugin "flyonui" {
+   themes: all;
+}
 @import "flyonui/variants.css";
+@source "./node_modules/flyonui/flyonui.js"; 
 
-/* Remove invalid @plugin and @source directives.
-  JavaScript files cannot be imported via CSS. 
-  If you need JS, impo
+body{
+  font-family: var(--my-Font);
+}
+
+[data-theme="claude"] {
+  --my-Font: "Geist";
+}
+
+[data-theme="corporate"] {
+  --my-Font: "Public Sans";
+}
+
+[data-theme="ghibli"] {
+  --my-Font: "Amaranth";
+}
+
+[data-theme="gourmet"] {
+  --my-Font: "Rubik";
+}
+
+[data-theme="luxury"] {
+  --my-Font: "Archivo";
+}
+
+[data-theme="pastel"] {
+  --my-Font: "Open Sans";
+}
+
+[data-theme="slack"] {
+  --my-Font: "Lato";
+}
+
+[data-theme="soft"] {
+  --my-Font: "Montserrat";
+}
+
+[data-theme="spotify"] {
+  --my-Font: "Lato";
+}
+
+[data-theme="valorant"] {
+  --my-Font: "Work Sans";
+}
+
+[data-theme="vscode"] {
+  --my-Font: "Fira Code";
+}
+
+[data-theme="black"] {
+  --my-Font: "Public Sans";
+}
